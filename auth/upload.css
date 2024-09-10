@@ -1,0 +1,154 @@
+.file-upload {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.file-upload-btn {
+  width: 100%;
+  margin: 0;
+  color: #fff;
+  background: #4158a6;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  border-bottom: 4px solid #4158a6;
+  transition: all 0.2s ease;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.file-upload-btn:hover {
+  background: #4158a6;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.file-upload-btn:active {
+  border: 0;
+}
+
+.file-upload-content {
+  display: none;
+  text-align: center;
+}
+
+.file-upload-input {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.image-upload-wrap {
+  margin-top: 20px;
+  border: 4px dashed #4158a6;
+  position: relative;
+}
+
+.image-dropping,
+.image-upload-wrap:hover {
+  background-color: #4158a6;
+  border: 4px dashed #ffffff;
+}
+
+.image-title-wrap {
+  padding: 0 15px 15px 15px;
+  color: #222;
+}
+
+.drag-text {
+  text-align: center;
+}
+
+.drag-text h3 {
+  font-weight: 100;
+  text-transform: uppercase;
+  color: #4158a6;
+  padding: 60px 0;
+}
+
+.file-upload-image {
+  max-height: 200px;
+  max-width: 100%;
+  margin: auto;
+  padding: 20px;
+}
+
+.remove-image,
+.submit-image {
+  width: 100%;
+  max-width: 200px;
+  margin: 10px auto 0 auto;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.remove-image {
+  background: #cd4535;
+  border-bottom: 4px solid #b02818;
+}
+
+.remove-image:hover {
+  background: #c13b2a;
+}
+
+.submit-image {
+  background: #4adf6f;
+  border-bottom: 4px solid #4adf6f;
+}
+
+.submit-image:hover {
+  background: #3fc761;
+}
+
+@media screen and (max-width: 768px) {
+  .file-upload {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .drag-text h3 {
+    padding: 40px 0;
+    font-size: 16px;
+  }
+
+  .file-upload-image {
+    max-height: 150px;
+  }
+
+  .remove-image,
+  .submit-image {
+    max-width: 20%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .drag-text h3 {
+    padding: 30px 0;
+    font-size: 14px;
+  }
+
+  .file-upload-image {
+    max-height: 100px;
+  }
+
+  .remove-image,
+  .submit-image {
+    max-width: 120px;
+    padding: 8px;
+  }
+}
